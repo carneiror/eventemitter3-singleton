@@ -1,0 +1,15 @@
+{
+  "name": "eventemitter3-singleton",
+  "version": "1.0.0",
+  "description": "Just a wrapper to EventRegistry so we can have it as a singleton anywhere we import it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eventemitter3": "*"
+  }
+}
