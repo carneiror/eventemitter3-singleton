@@ -9,6 +9,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventEmitter = void 0;
 var eventemitter3_1 = require("eventemitter3");
 var registry = new eventemitter3_1.default();
 var eventNames = registry.eventNames, listenerCount = registry.listenerCount, listeners = registry.listeners, off = registry.off, removeAllListeners = registry.removeAllListeners;
@@ -33,7 +34,7 @@ function once(event, callback) {
     }
     return registry.once.apply(registry, __spreadArray([event, callback], args, false));
 }
-exports.default = {
+exports.EventEmitter = {
     emit: emit,
     eventNames: eventNames,
     listenerCount: listenerCount,

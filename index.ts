@@ -25,7 +25,7 @@ function once<
   return registry.once(event, callback, ...args);
 }
 
-export default {
+export const EventEmitter = {
   emit,
   eventNames,
   listenerCount,
